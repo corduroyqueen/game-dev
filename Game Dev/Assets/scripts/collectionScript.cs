@@ -8,7 +8,7 @@ public class collectionScript : MonoBehaviour {
 	private bagSizeScript bagSizeOtherScript; 
 	private static float theSize;
 
-
+	public float value;
 
 	private bool collect;
 
@@ -36,7 +36,7 @@ public class collectionScript : MonoBehaviour {
 		theSize = bagSizeOtherScript.size;
 
 		if (theSize <= 5f && collect == true && Input.GetKey(KeyCode.E)) {
-			bagSizeOtherScript.Run ();
+			bagSizeOtherScript.Run (value);
 			Destroy (this.gameObject);
 		}
 

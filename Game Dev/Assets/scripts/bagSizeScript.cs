@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -68,9 +68,9 @@ public class bagSizeScript : MonoBehaviour {
 
 
 
-	public void Run()
+	public void Run(float increaseSize)
 	{
-		size += 1f;
+		size += increaseSize;
 		runCheck = true;
 	}
 
