@@ -8,6 +8,9 @@ public class collectionScript : MonoBehaviour {
 	private bagSizeScript bagSizeOtherScript; 
 	private static float theSize;
 
+	public GameObject player;
+	private movementScript movementScript; 
+
 	public float value;
 
 	private bool collect;
@@ -25,6 +28,11 @@ public class collectionScript : MonoBehaviour {
 		bagSizeOtherScript = (bagSizeScript)bagSize.GetComponent (typeof(bagSizeScript));
 		bagSizeOtherScript = bagSize.GetComponent<bagSizeScript> ();
 
+		player = GameObject.Find ("player");
+		movementScript = (movementScript)player.GetComponent (typeof(movementScript));
+		movementScript = player.GetComponent<movementScript> ();
+
+
 		theSize = bagSizeOtherScript.size;
 
 
@@ -37,6 +45,7 @@ public class collectionScript : MonoBehaviour {
 
 		if (theSize <= 5f && collect == true && Input.GetKey(KeyCode.E)) {
 			bagSizeOtherScript.Run (value);
+			movementScript.Value (value);
 			Destroy (this.gameObject);
 		}
 

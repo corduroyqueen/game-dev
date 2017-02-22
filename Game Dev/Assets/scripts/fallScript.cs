@@ -8,8 +8,6 @@ public class fallScript : MonoBehaviour {
 	public GameObject player;
 	private movementScript movementScript;
 
-
-
 	// Use this for initialization
 	void Start () {
 
@@ -27,7 +25,7 @@ public class fallScript : MonoBehaviour {
 
 
 
-		if (other.gameObject.name == "fall Box" && movementScript.dashCheck == false) {
+		if (other.gameObject.name == "fall Box" && movementScript.dashCheck == false && movingPlatformScript.fallCheck == true) {
 			movementScript.playerStatus = false;
 		}
 	}

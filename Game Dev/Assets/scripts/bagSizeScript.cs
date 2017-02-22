@@ -10,13 +10,13 @@ public class bagSizeScript : MonoBehaviour {
 	private bool runCheck = false;
 	public float size = 0f;
 
+	Vector2 location;
+
 	// Use this for initialization
 	void Start () {
 
 		player = GameObject.Find ("player");
 		movementScript = (movementScript)player.GetComponent (typeof(movementScript));
-
-
 	}
 	
 	// Update is called once per frame
@@ -75,4 +75,13 @@ public class bagSizeScript : MonoBehaviour {
 	}
 
 
+	public void OnCollisionEnter2D (Collision2D other)
+	{
+		location = transform.position;
+
+		if (other.gameObject.tag == "wall") {
+			transform.position = location;
+		}
+
+	}
 }

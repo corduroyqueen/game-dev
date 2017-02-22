@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class arrowScriptTrig : MonoBehaviour
-{
-
+public class timedArrowScript : MonoBehaviour {
+	
 	public GameObject arrowPrefab;
 	public float xDistanceFromParent;
 	public float yDistanceFromParent;
@@ -15,12 +14,14 @@ public class arrowScriptTrig : MonoBehaviour
 	bool readyFire;
 
 
+	public float timer;
+
 	// Use this for initialization
 	void Start ()
 	{
 		readyFire = true;
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -32,14 +33,14 @@ public class arrowScriptTrig : MonoBehaviour
 			readyFire = true;
 			increment = 0f;
 		}
-	}
 
-	void OnTriggerStay2D (Collider2D other)
-	{
 
-		if (other.gameObject.name == "player" && readyFire == true) {
+		increment2++;
+
+		if (increment2 >= timer) {
+
 			(Instantiate (arrowPrefab, new Vector2 (transform.position.x + xDistanceFromParent, transform.position.y + yDistanceFromParent), new Quaternion (0f, 0f, 0f, 0f)) as GameObject).transform.parent = this.transform;
-			readyFire = false;
+			increment2 = 0f;
 
 		}
 	}
