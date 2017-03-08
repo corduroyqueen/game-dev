@@ -15,7 +15,7 @@ public class collectionScript : MonoBehaviour {
 
 	private bool collect;
 
-
+	public bool finaltreasure;
 
 	// Use this for initialization
 	void Start () {
@@ -46,6 +46,13 @@ public class collectionScript : MonoBehaviour {
 		if (theSize <= 5f && collect == true && Input.GetKey(KeyCode.E)) {
 			bagSizeOtherScript.Run (value);
 			movementScript.Value (value);
+
+			if (finaltreasure == true) {
+
+				movementScript.winCondition = true;
+
+			}
+
 			Destroy (this.gameObject);
 		}
 

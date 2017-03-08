@@ -8,14 +8,18 @@ public class projectileScript : MonoBehaviour {
 	private movementScript movementScript;
 
 	float increment;
+	public float increment2;
 
 	public int direction;
 
 	float okay;
 
+	bool hitTrue;
 	bool flying;
 
 	Rigidbody2D arrowrb;
+
+	public GameObject blood;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +28,7 @@ public class projectileScript : MonoBehaviour {
 		movementScript = (movementScript)player.GetComponent (typeof(movementScript));
 
 		increment = 0f;
+		increment2 = 0f;
 
 		arrowrb = GetComponent<Rigidbody2D> ();
 
@@ -31,14 +36,25 @@ public class projectileScript : MonoBehaviour {
 
 		flying = true;
 
-
-
+		hitTrue = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		Fire (direction);
+
+		if (hitTrue == true) {
+
+			increment2++;
+			movementScript.ArrowHit();
+		}
+		if (increment2 >= 10f){
+			movementScript.playerStatus = false;
+			hitTrue = false;
+			increment2 = 0f;
+
+		}
 
 	}
 
@@ -62,8 +78,12 @@ public class projectileScript : MonoBehaviour {
 
 	public void OnTriggerEnter2D (Collider2D other){
 		if (other.gameObject.name == "player" && flying == true) {
-			movementScript.playerStatus = false;
+
+			hitTrue = true;
+			Instantiate (blood, new Vector2 (player.transform.position.x,player.transform.position.y),new Quaternion(0f,0f,0f,0f));
 		}
+
+
 
 		if (other.gameObject.tag == "wall") {
 			flying = false;

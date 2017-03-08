@@ -9,7 +9,11 @@ public class breakWallScript : MonoBehaviour {
 	public GameObject player;
 	private movementScript movementScript;
 
+	public GameObject breakParticles;
+
 	public float sizeReq;
+
+	public bool collision;
 
 	// Use this for initialization
 	void Start () {
@@ -20,21 +24,31 @@ public class breakWallScript : MonoBehaviour {
 		player = GameObject.Find ("player");
 		movementScript = (movementScript)player.GetComponent (typeof(movementScript));
 
-
+		collision = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
+		if (movementScript.hittingCheck == true && bagSizeScript.size == sizeReq && collision == true) {
+			Instantiate (breakParticles, new Vector2 (this.transform.position.x,this.transform.position.y),new Quaternion(0f,0f,0f,0f));
+			Destroy (this.gameObject);
+		}
 
 	}
 
 	void OnTriggerStay2D (Collider2D other)
 	{
-		if (other.gameObject.name == "player") {
-			if (movementScript.hittingCheck == true && bagSizeScript.size == sizeReq)
-				Destroy (this.gameObject);
+	}
+
+	void OnCollisionStay2D (Collision2D other){
+
+		if (other.gameObject.name == "bagSize") {
+
+			collision = true;
+
+		} else {
+			collision = false;
 		}
 	}
 }

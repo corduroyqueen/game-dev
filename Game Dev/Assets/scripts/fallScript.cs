@@ -8,6 +8,8 @@ public class fallScript : MonoBehaviour {
 	public GameObject player;
 	private movementScript movementScript;
 
+	public bool contact;
+	Vector3 position;
 	// Use this for initialization
 	void Start () {
 
@@ -18,7 +20,7 @@ public class fallScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		contact = false;
 	}
 
 	public void OnTriggerStay2D (Collider2D other){
@@ -26,7 +28,18 @@ public class fallScript : MonoBehaviour {
 
 
 		if (other.gameObject.name == "fall Box" && movementScript.dashCheck == false && movingPlatformScript.fallCheck == true) {
-			movementScript.playerStatus = false;
+			contact = true;
 		}
+
+		if (contact == true) {
+			movementScript.GetSmaller ();
+		}
+
+		if (movementScript.playerStatus == false) {
+
+			contact = false;
+
+		}
+
 	}
 }

@@ -10,6 +10,8 @@ public class bagSizeScript : MonoBehaviour {
 	private bool runCheck = false;
 	public float size = 0f;
 
+	public GameObject trail;
+
 	Vector2 location;
 
 	// Use this for initialization
@@ -52,6 +54,16 @@ public class bagSizeScript : MonoBehaviour {
 
 		if (size == 6f) {
 			transform.localScale = new Vector3 (1.80f, 1.80f, 1.41432f);
+
+		}
+
+		if (size == 6f && movementScript.playerStatus == true) {
+
+			trail.GetComponent<TrailRenderer> ().time = 5f;
+		}
+
+		if (size != 6f) {
+			trail.GetComponent<TrailRenderer> ().time = 0f;
 		}
 
 		if (size <= 0f) {
@@ -62,8 +74,13 @@ public class bagSizeScript : MonoBehaviour {
 			size = 6f;
 		}
 
+		if (movementScript.playerStatus == false) {
+
+			trail.GetComponent<TrailRenderer> ().time = 0f;
+
+		}
+
 		movementScript.Speed (size);
-	
 	}
 
 

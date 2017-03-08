@@ -5,7 +5,7 @@ using UnityEngine;
 public class movingPlatformScript : MonoBehaviour {
 
 	public float increment;
-	Vector3 startPos;
+	public Vector3 startPos;
 	Rigidbody2D rb;
 
 	public float direct1;
