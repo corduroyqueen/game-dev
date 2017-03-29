@@ -491,7 +491,7 @@ public class movementScript : MonoBehaviour
 		if (other.gameObject.tag == "wall" && increment >= 7f) {
 			dashCheck = false;
 			increment = 20f;
-			playerrb.velocity = new Vector2 (0f, 0f);
+			playerrb.velocity = new Vector3 (0f, 0f, 0f);
 
 		}
 
@@ -510,13 +510,13 @@ public class movementScript : MonoBehaviour
 
 		if (other.gameObject.tag == "wall" && platformCheck == false || other.gameObject.tag == "treasure") {
 			if (dashCheck == false) {
-				playerrb.velocity = new Vector2 (0f, 0f);
+				playerrb.velocity = new Vector3 (0f, 0f, 0f);
 			}
 		}
 
-		if (other.gameObject.name == "bagSize") {
+		if (other.gameObject.name == "bagSize" || other.gameObject.name == "dropoff") {
 
-			playerrb.velocity = new Vector2 (0f, 0f);
+			playerrb.velocity = new Vector3 (0f, 0f, 0f);
 		}
 
 
@@ -524,9 +524,9 @@ public class movementScript : MonoBehaviour
 
 	public void OnCollisionExit2D (Collision2D other){
 
-		if (other.gameObject.name == "bagSize") {
+		if (other.gameObject.name == "bagSize" || other.gameObject.name == "dropoff") {
 
-			playerrb.velocity = new Vector2 (0f, 0f);
+			playerrb.velocity = new Vector3 (0f, 0f, 0f);
 		}
 
 	}
