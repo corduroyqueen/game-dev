@@ -8,8 +8,10 @@ public class startingScript : MonoBehaviour {
 	public GameObject screen2;
 	public float alpha;
 	public bool intro;
-	public bool ready;
+	public bool screen1check;
+	public bool screen2check;
 	public bool transition;
+	public bool ready;
 
 	public float timer;
 
@@ -19,24 +21,36 @@ public class startingScript : MonoBehaviour {
 		alpha = 1f;
 
 		intro = true;
+		screen1check = true;
+		screen2check = false;
 		ready = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (screen1.GetComponent<SpriteRenderer> ().enabled == true && Input.GetKeyDown (KeyCode.E)) {
-			
-			ready = false;
+		if (screen1check == true) {
+
+			screen1.GetComponent<SpriteRenderer> ().enabled = true;
+			screen2.GetComponent<SpriteRenderer> ().enabled = false;
+			screen2check = false;
 		}
 
-		if (screen1.GetComponent<SpriteRenderer> ().enabled == true && Input.GetKeyUp (KeyCode.E)) {
+		if (screen1check == true && Input.GetKeyDown (KeyCode.E)) {
+			screen1check = false;
+			screen2check = true;
+		}
+
+		if (screen2check == true) {
+
 			screen1.GetComponent<SpriteRenderer> ().enabled = false;
 			screen2.GetComponent<SpriteRenderer> ().enabled = true;
-			ready = true;
+			screen1check = false;
 		}
 
-		if (ready == true) {
+		if (screen2check == true && Input.GetKeyUp (KeyCode.E) && ready == false) {
+
+			ready = true;
 			timer++;
 
 		}
@@ -44,14 +58,14 @@ public class startingScript : MonoBehaviour {
 
 
 
-		if (screen2.GetComponent<SpriteRenderer> ().enabled == true && Input.GetKeyDown (KeyCode.E) && timer >= 10f) {
+		if (screen2check == true && Input.GetKeyDown (KeyCode.E) && ready == true) {
 
 			transition = true;
-
+			timer++;
 
 		}
 
-		if (transition = true) {
+		if (transition = true && screen2.GetComponent<SpriteRenderer> ().enabled == true && ready == true && timer >= 2f) {
 
 			alpha -= 0.005f;
 

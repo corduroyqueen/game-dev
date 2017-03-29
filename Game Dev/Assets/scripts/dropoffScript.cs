@@ -24,6 +24,16 @@ public class dropoffScript : MonoBehaviour
 	bool once;
 	bool keyStopper;
 
+	public Sprite size0;
+	public Sprite size1;
+	public Sprite size2;
+	public Sprite size3;
+	public Sprite size4;
+	public Sprite size5;
+	public Sprite size6;
+
+
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -46,6 +56,34 @@ public class dropoffScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (contained == 0f) {
+			GetComponent<SpriteRenderer> ().sprite = size0;
+		}
+
+		if (contained == 1f) {
+			GetComponent<SpriteRenderer> ().sprite = size1;
+		}
+
+		if (contained == 2f) {
+			GetComponent<SpriteRenderer> ().sprite = size2;
+		}
+
+		if (contained == 3f) {
+			GetComponent<SpriteRenderer> ().sprite = size3;
+		}
+
+		if (contained == 4f) {
+			GetComponent<SpriteRenderer> ().sprite = size4;
+		}
+
+		if (contained == 5f) {
+			GetComponent<SpriteRenderer> ().sprite = size5;
+		}
+
+		if (contained == 6f) {
+			GetComponent<SpriteRenderer> ().sprite = size6;
+		}
+
 
 		if (bagSizeOtherScript.size == 6f) {
 			full = true;

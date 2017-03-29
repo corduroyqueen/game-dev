@@ -10,6 +10,30 @@ public class movementScript : MonoBehaviour
 	/// <summary>
 	/// T//////////////////////////////////////////////////////////////	/// </summary>
 	/// 
+	/// 
+	/// 
+	/// 
+
+
+	public GameObject sprite;
+
+	public Sprite idleleft;
+	public RuntimeAnimatorController idleleftcontrol;
+
+	public Sprite walkingleft;
+	public RuntimeAnimatorController walkingleftcontrol;
+
+	public Sprite walkingup;
+	public RuntimeAnimatorController walkingupcontrol;
+
+	public Sprite walkingdown;
+	public RuntimeAnimatorController walkingdowncontrol;
+
+	public Sprite idleup;
+	public Sprite idledown;
+
+
+
 	public Camera testCamera;
 
 	private Vector3 testMousePosition;
@@ -177,12 +201,18 @@ public class movementScript : MonoBehaviour
 			//transform.position = new Vector3 (transform.position.x - (0.1f * slow), transform.position.y, 0f);
 			if (windUpCheck == false && dying == false) {
 				playerrb.velocity = new Vector2 (-7f * slow, playerrb.velocity.y);
-
 				hittingCheck = false;
+				sprite.GetComponent<Animator> ().enabled = true;
+				sprite.GetComponent<SpriteRenderer> ().sprite = walkingleft;
+				sprite.GetComponent<Animator> ().runtimeAnimatorController = walkingleftcontrol;
+				sprite.GetComponent<SpriteRenderer> ().flipX = false;
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.A)) {
 			playerrb.velocity = new Vector2 (0f, playerrb.velocity.y);
+			sprite.GetComponent<SpriteRenderer> ().sprite = idleleft;
+			sprite.GetComponent<Animator> ().runtimeAnimatorController = idleleftcontrol;
+			sprite.GetComponent<SpriteRenderer> ().flipX = false;
 		}
 		if (Input.GetKey (KeyCode.A) && windUpCheck == true || dying == true || arrowDying == true) {
 
@@ -196,10 +226,17 @@ public class movementScript : MonoBehaviour
 			if (windUpCheck == false && dying == false) {
 				playerrb.velocity = new Vector2 (7f * slow, playerrb.velocity.y);
 				hittingCheck = false;
+				sprite.GetComponent<Animator> ().enabled = true;
+				sprite.GetComponent<SpriteRenderer> ().sprite = walkingleft;
+				sprite.GetComponent<Animator> ().runtimeAnimatorController = walkingleftcontrol;
+				sprite.GetComponent<SpriteRenderer> ().flipX = true;
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.D)) {
 			playerrb.velocity = new Vector2 (0f, playerrb.velocity.y);
+			sprite.GetComponent<SpriteRenderer> ().sprite = idleleft;
+			sprite.GetComponent<Animator> ().runtimeAnimatorController = idleleftcontrol;
+			sprite.GetComponent<SpriteRenderer> ().flipX = true;
 		}
 		if (Input.GetKey (KeyCode.D) && windUpCheck == true || dying == true || arrowDying == true) {
 
@@ -213,10 +250,18 @@ public class movementScript : MonoBehaviour
 			if (windUpCheck == false && dying == false) {
 				playerrb.velocity = new Vector2 (playerrb.velocity.x, 7f * slow);
 				hittingCheck = false;
+				if (Input.GetKeyDown (KeyCode.A) == false || Input.GetKey (KeyCode.D) == false) {
+					sprite.GetComponent<Animator> ().enabled = true;
+					sprite.GetComponent<SpriteRenderer> ().sprite = walkingup;
+					sprite.GetComponent<Animator> ().runtimeAnimatorController = walkingupcontrol;
+					sprite.GetComponent<SpriteRenderer> ().flipX = true;
+				}
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.W)) {
 			playerrb.velocity = new Vector2 (playerrb.velocity.x, 0f);
+			sprite.GetComponent<SpriteRenderer> ().sprite = idleup;
+			sprite.GetComponent<Animator> ().enabled = false;
 		}
 		if (Input.GetKey (KeyCode.W) && windUpCheck == true || dying == true || arrowDying == true) {
 			playerrb.velocity = new Vector2 (playerrb.velocity.x, 0f);
@@ -228,10 +273,18 @@ public class movementScript : MonoBehaviour
 			if (windUpCheck == false && dying == false) {
 				playerrb.velocity = new Vector2 (playerrb.velocity.x, -7f * slow);
 				hittingCheck = false;
+				if (Input.GetKeyDown (KeyCode.A) == false || Input.GetKey (KeyCode.D) == false) {
+					sprite.GetComponent<Animator> ().enabled = true;
+					sprite.GetComponent<SpriteRenderer> ().sprite = walkingdown;
+					sprite.GetComponent<Animator> ().runtimeAnimatorController = walkingdowncontrol;
+					sprite.GetComponent<SpriteRenderer> ().flipX = true;
+				}
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.S)) {
 			playerrb.velocity = new Vector2 (playerrb.velocity.x, 0f);
+			sprite.GetComponent<SpriteRenderer> ().sprite = idledown;
+			sprite.GetComponent<Animator> ().enabled = false;
 		}
 		if (Input.GetKey (KeyCode.W) && windUpCheck == true || dying == true || arrowDying == true) {
 			playerrb.velocity = new Vector2 (playerrb.velocity.x, 0f);
@@ -466,6 +519,15 @@ public class movementScript : MonoBehaviour
 			playerrb.velocity = new Vector2 (0f, 0f);
 		}
 
+
+	}
+
+	public void OnCollisionExit2D (Collision2D other){
+
+		if (other.gameObject.name == "bagSize") {
+
+			playerrb.velocity = new Vector2 (0f, 0f);
+		}
 
 	}
 
