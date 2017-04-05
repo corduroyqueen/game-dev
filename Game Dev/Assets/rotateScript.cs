@@ -18,7 +18,7 @@ public class rotateScript : MonoBehaviour {
 
 		increment--;
 
-		if (increment <= -359f) {
+		if (increment <= -10f) {
 
 			increment = 0f;
 

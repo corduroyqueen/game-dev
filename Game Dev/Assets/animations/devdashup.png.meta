@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: bae8c8128f1b65f4d86587c2cb01b5ff
+timeCreated: 1491341952
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: devdashup_0
+    21300002: devdashup_1
+    21300004: devdashup_2
+    21300006: devdashup_3
+    21300008: devdashup_4
+    21300010: devdashup_5
+    21300012: devdashup_6
+    21300014: devdashup_7
+    21300016: devdashup_8
+    21300018: devdashup_9
+    21300020: devdashup_10
+    21300022: devdashup_11
+    21300024: devdashup_12
+    21300026: devdashup_13
+    21300028: devdashup_14
+    21300030: devdashup_15
+    21300032: devdashup_16
+    21300034: devdashup_17
+    21300036: devdashup_18
+    21300038: devdashup_19
+    21300040: devdashup_20
+    21300042: devdashup_21
+    21300044: devdashup_22
+    21300046: devdashup_23
+    21300048: devdashup_24
+    21300050: devdashup_25
+    21300052: devdashup_26
+    21300054: devdashup_27
+    21300056: devdashup_28
+    21300058: devdashup_29
+    21300060: devdashup_30
+    21300062: devdashup_31
+    21300064: devdashup_32
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: devdashup_2
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1400
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1400
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_5
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1400
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1050
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_11
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1050
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_12
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1050
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_14
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1050
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_17
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 700
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_18
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 700
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_19
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 700
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_21
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 700
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_25
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 350
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_26
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 350
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_27
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 350
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_28
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 350
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_30
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_31
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashup_32
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 298
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

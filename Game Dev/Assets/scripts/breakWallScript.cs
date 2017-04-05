@@ -17,6 +17,8 @@ public class breakWallScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
+
 
 		bagSize = GameObject.Find ("bagSize");
 		bagSizeScript = (bagSizeScript)bagSize.GetComponent (typeof(bagSizeScript));
@@ -31,7 +33,9 @@ public class breakWallScript : MonoBehaviour {
 	void Update () {
 
 		if (movementScript.hittingCheck == true && bagSizeScript.size == sizeReq && collision == true) {
-			Instantiate (breakParticles, new Vector2 (this.transform.position.x,this.transform.position.y),new Quaternion(0f,0f,0f,0f));
+			Instantiate (breakParticles, new Vector3 (this.transform.position.x,this.transform.position.y, -10f),new Quaternion(0f,0f,0f,0f));
+			Debug.Log ("okay");
+			GameObject.Find ("blowupblock").GetComponent<AudioSource> ().Play ();
 			Destroy (this.gameObject);
 		}
 

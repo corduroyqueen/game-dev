@@ -52,7 +52,7 @@ public class collectionScript : MonoBehaviour {
 				movementScript.winCondition = true;
 
 			}
-
+			GameObject.Find ("pickup").GetComponent<AudioSource> ().Play ();
 			Destroy (this.gameObject);
 		}
 

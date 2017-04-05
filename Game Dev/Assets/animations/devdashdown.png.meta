@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 24c0102d1754174489d05c7b614a2929
+timeCreated: 1491342057
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: devdashdown_0
+    21300002: devdashdown_1
+    21300004: devdashdown_2
+    21300006: devdashdown_3
+    21300008: devdashdown_4
+    21300010: devdashdown_5
+    21300012: devdashdown_6
+    21300014: devdashdown_7
+    21300016: devdashdown_8
+    21300018: devdashdown_9
+    21300020: devdashdown_10
+    21300022: devdashdown_11
+    21300024: devdashdown_12
+    21300026: devdashdown_13
+    21300028: devdashdown_14
+    21300030: devdashdown_15
+    21300032: devdashdown_16
+    21300034: devdashdown_17
+    21300036: devdashdown_18
+    21300038: devdashdown_19
+    21300040: devdashdown_20
+    21300042: devdashdown_21
+    21300044: devdashdown_22
+    21300046: devdashdown_23
+    21300048: devdashdown_24
+    21300050: devdashdown_25
+    21300052: devdashdown_26
+    21300054: devdashdown_27
+    21300056: devdashdown_28
+    21300058: devdashdown_29
+    21300060: devdashdown_30
+    21300062: devdashdown_31
+    21300064: devdashdown_32
+    21300066: devdashdown_33
+    21300068: devdashdown_34
+    21300070: devdashdown_35
+    21300072: devdashdown_36
+    21300074: devdashdown_37
+    21300076: devdashdown_38
+    21300078: devdashdown_39
+    21300080: devdashdown_40
+    21300082: devdashdown_41
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 225
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: devdashdown_2
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1755
+        width: 350
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_3
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1756
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_4
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1755
+        width: 350
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_5
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1755
+        width: 339
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1319
+        width: 349
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1319
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_9
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1319
+        width: 349
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_10
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1319
+        width: 352
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_11
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1319
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_13
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1320
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 878
+        width: 350
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_16
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 881
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 881
+        width: 349
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_18
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 881
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_19
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 881
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_20
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 881
+        width: 351
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 347
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_26
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 441
+        width: 348
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_27
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 442
+        width: 348
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_29
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 443
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_31
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 443
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_32
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 443
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 346
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_35
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 5
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_36
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 5
+        width: 350
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_37
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 4
+        width: 352
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_39
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 5
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: devdashdown_41
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 5
+        width: 351
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

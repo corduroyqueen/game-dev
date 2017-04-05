@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class lerping : MonoBehaviour {
 
-
+	//forget this one exists
 
 	// Use this for initialization
 	void Start () {
